@@ -1,8 +1,8 @@
-package com.makarov;
+package com.makarov.service;
 
 public abstract class BinaryElementExp extends Function {
 
-    double secondArg;
+    public double secondArg;
 
     @Override
     public String toString() {

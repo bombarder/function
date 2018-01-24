@@ -1,4 +1,6 @@
-package com.makarov;
+package com.makarov.service;
+
+import com.makarov.service.Function;
 
 public abstract class UnaryElementExp extends Function {
 
