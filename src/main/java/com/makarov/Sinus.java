@@ -4,14 +4,14 @@ public class Sinus extends UnaryElementExp {
 
     Sinus(double value) {
         firstArg = value;
-        calculate(value);
+        calculate();
     }
 
     Sinus() {
 
     }
 
-    public double calculate(double value) {
-        return result = Math.sin(value);
+    public double calculate() {
+        return result = Math.sin(firstArg);
     }
 }

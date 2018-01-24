@@ -3,10 +3,11 @@ package com.makarov;
 public class Constant extends UnaryElementExp{
 
     public Constant(double value) {
-        calculate(value);
+        firstArg = value;
+        calculate();
     }
 
-    public double calculate(double value) {
-        return value;
+    public double calculate() {
+        return firstArg;
     }
 }

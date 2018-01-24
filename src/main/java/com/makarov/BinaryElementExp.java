@@ -6,6 +6,6 @@ public abstract class BinaryElementExp extends Function {
 
     @Override
     public String toString() {
-        return getClass().getSimpleName() + " of " + firstArg + " " + secondArg + " executed with the result: " + result;
+        return getClass().getSimpleName() + " of " + firstArg + " and " + secondArg + " executed with the result: " + result;
     }
 }

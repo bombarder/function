@@ -6,12 +6,14 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        List<Function>functionList = new ArrayList<Function>();
+        List<Function>functionsList = new ArrayList<Function>();
 
-        Function sinus = new Sinus(90);
-        functionList.add(sinus);
+        Function sinus = new Sinus();
+        Function addition = new Addition();
+        functionsList.add(sinus);
+        functionsList.add(addition);
 
-        for (Function function:functionList) {
+        for (Function function:functionsList) {
             printIntoConsole(function);
         }
     }
