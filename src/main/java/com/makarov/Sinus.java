@@ -1,13 +1,13 @@
 package com.makarov;
 
-public class Sinus extends Function {
+public class Sinus extends UnaryElementExp {
 
     Sinus(double value) {
-        input = value;
+        firstArg = value;
         calculate(value);
     }
 
-    public Sinus() {
+    Sinus() {
 
     }
 
