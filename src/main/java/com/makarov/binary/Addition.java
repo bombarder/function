@@ -1,18 +1,14 @@
 package com.makarov.binary;
 
-import com.makarov.service.BinaryElementExp;
+import com.makarov.service.Function;
 
-public class Addition extends BinaryElementExp {
-    public Addition(double firstParam, double secondParam) {
-        firstArg = firstParam;
-        secondArg = secondParam;
-        calculate();
+public class Addition extends Function {
+
+    public double calculate(double inputFirstValue, double inputSecondValue) {
+        return inputFirstValue + inputSecondValue;
     }
 
-    public Addition() {
-    }
-
-    public double calculate() {
-        return result = firstArg + secondArg;
+    public double calculate(double inputValue) {
+        return 0;
     }
 }

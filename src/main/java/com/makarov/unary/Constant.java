@@ -1,18 +1,14 @@
 package com.makarov.unary;
 
-import com.makarov.service.UnaryElementExp;
+import com.makarov.service.Function;
 
-public class Constant extends UnaryElementExp {
+public class Constant extends Function {
 
-    public Constant(double value) {
-        firstArg = value;
-        calculate();
+    public double calculate(double inputFirstValue, double inputSecondValue) {
+        return 0;
     }
 
-    public Constant() {
-    }
-
-    public double calculate() {
-        return result = firstArg;
+    public double calculate(double inputValue) {
+        return inputValue;
     }
 }

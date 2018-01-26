@@ -1,17 +1,14 @@
 package com.makarov.unary;
 
-import com.makarov.service.UnaryElementExp;
+import com.makarov.service.Function;
 
-public class Cosines extends UnaryElementExp {
-    public Cosines(double value) {
-        firstArg = value;
-        calculate();
+public class Cosines extends Function {
+
+    public double calculate(double inputFirstValue, double inputSecondValue) {
+        return 0;
     }
 
-    public Cosines() {
-    }
-
-    public double calculate() {
-        return result = Math.cos(firstArg);
+    public double calculate(double inputValue) {
+        return Math.cos(inputValue);
     }
 }

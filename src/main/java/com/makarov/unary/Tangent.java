@@ -1,17 +1,15 @@
 package com.makarov.unary;
 
-import com.makarov.service.UnaryElementExp;
+import com.makarov.service.Function;
 
-public class Tangent extends UnaryElementExp {
-    public Tangent(double value) {
-        firstArg = value;
-        calculate();
+public class Tangent extends Function {
+
+
+    public double calculate(double inputFirstValue, double inputSecondValue) {
+        return 0;
     }
 
-    public Tangent() {
-    }
-
-    public double calculate() {
-        return result = Math.tan(firstArg);
+    public double calculate(double inputValue) {
+        return Math.tan(inputValue);
     }
 }

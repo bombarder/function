@@ -1,17 +1,14 @@
 package com.makarov.unary;
 
-import com.makarov.service.UnaryElementExp;
+import com.makarov.service.Function;
 
-public class Cotangent extends UnaryElementExp {
-    public Cotangent(double value) {
-        firstArg = value;
-        calculate();
+public class Cotangent extends Function {
+
+    public double calculate(double inputFirstValue, double inputSecondValue) {
+        return 0;
     }
 
-    public Cotangent() {
-    }
-
-    public double calculate() {
-        return result = 1/Math.tan(firstArg);
+    public double calculate(double inputValue) {
+        return 1/Math.tan(inputValue);
     }
 }

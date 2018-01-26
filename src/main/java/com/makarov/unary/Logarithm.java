@@ -1,17 +1,14 @@
 package com.makarov.unary;
 
-import com.makarov.service.UnaryElementExp;
+import com.makarov.service.Function;
 
-public class Logarithm extends UnaryElementExp {
-    public Logarithm(double value) {
-        firstArg = value;
-        calculate();
+public class Logarithm extends Function {
+
+    public double calculate(double inputFirstValue, double inputSecondValue) {
+        return 0;
     }
 
-    public Logarithm() {
-    }
-
-    public double calculate() {
-        return result = Math.log(firstArg);
+    public double calculate(double inputValue) {
+        return Math.log(inputValue);
     }
 }

@@ -1,19 +1,14 @@
 package com.makarov.unary;
 
-import com.makarov.service.UnaryElementExp;
+import com.makarov.service.Function;
 
-public class Sinus extends UnaryElementExp {
+public class Sinus extends Function {
 
-    public Sinus(double value) {
-        firstArg = value;
-        calculate();
+    public double calculate(double inputFirstValue, double inputSecondValue) {
+        return 0;
     }
 
-    public Sinus() {
-
-    }
-
-    public double calculate() {
-        return result = Math.sin(firstArg);
+    public double calculate(double inputValue) {
+        return Math.sin(inputValue);
     }
 }

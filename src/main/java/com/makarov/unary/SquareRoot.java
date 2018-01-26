@@ -1,17 +1,14 @@
 package com.makarov.unary;
 
-import com.makarov.service.UnaryElementExp;
+import com.makarov.service.Function;
 
-public class SquareRoot extends UnaryElementExp {
-    public SquareRoot(double value) {
-        firstArg = value;
-        calculate();
+public class SquareRoot extends Function {
+
+    public double calculate(double inputFirstValue, double inputSecondValue) {
+        return 0;
     }
 
-    public SquareRoot() {
-    }
-
-    public double calculate() {
-        return result = Math.sqrt(firstArg);
+    public double calculate(double inputValue) {
+        return Math.sqrt(inputValue);
     }
 }

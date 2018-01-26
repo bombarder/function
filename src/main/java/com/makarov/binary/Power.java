@@ -1,18 +1,14 @@
 package com.makarov.binary;
 
-import com.makarov.service.BinaryElementExp;
+import com.makarov.service.Function;
 
-public class Power extends BinaryElementExp {
-    public Power(double firstParam, double secondParam) {
-        firstArg = firstParam;
-        secondArg = secondParam;
-        calculate();
+public class Power extends Function {
+
+    public double calculate(double inputFirstValue, double inputSecondValue) {
+        return Math.pow(inputFirstValue, inputSecondValue);
     }
 
-    public Power() {
-    }
-
-    public double calculate() {
-        return result = Math.pow(firstArg,secondArg);
+    public double calculate(double inputValue) {
+        return 0;
     }
 }

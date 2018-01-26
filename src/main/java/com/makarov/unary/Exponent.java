@@ -1,17 +1,14 @@
 package com.makarov.unary;
 
-import com.makarov.service.UnaryElementExp;
+import com.makarov.service.Function;
 
-public class Exponent extends UnaryElementExp {
-    public Exponent(double value) {
-        firstArg = value;
-        calculate();
+public class Exponent extends Function {
+
+    public double calculate(double inputFirstValue, double inputSecondValue) {
+        return 0;
     }
 
-    public Exponent() {
-    }
-
-    public double calculate() {
-        return result = Math.exp(firstArg);
+    public double calculate(double inputValue) {
+        return Math.exp(inputValue);
     }
 }
