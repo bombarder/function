@@ -4,11 +4,11 @@ import com.makarov.service.Function;
 
 public class Logarithm extends Function {
 
-    public double calculate(double inputFirstValue, double inputSecondValue) {
-        return 0;
+    public double calculate(double x) {
+        return Math.log(x);
     }
-
-    public double calculate(double inputValue) {
-        return Math.log(inputValue);
+    @Override
+    public String toString() {
+        return "Logarithm (" + leftParameter.toString() + ")";
     }
 }

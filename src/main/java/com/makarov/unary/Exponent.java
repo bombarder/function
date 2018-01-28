@@ -4,11 +4,11 @@ import com.makarov.service.Function;
 
 public class Exponent extends Function {
 
-    public double calculate(double inputFirstValue, double inputSecondValue) {
-        return 0;
+    public double calculate(double x) {
+        return Math.exp(x);
     }
-
-    public double calculate(double inputValue) {
-        return Math.exp(inputValue);
+    @Override
+    public String toString() {
+        return "Exponent (" + leftParameter.toString() + ")";
     }
 }

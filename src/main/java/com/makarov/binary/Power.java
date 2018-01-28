@@ -4,11 +4,12 @@ import com.makarov.service.Function;
 
 public class Power extends Function {
 
-    public double calculate(double inputFirstValue, double inputSecondValue) {
-        return Math.pow(inputFirstValue, inputSecondValue);
+    public double calculate(double x) {
+        return Math.pow(x, x);
     }
 
-    public double calculate(double inputValue) {
-        return 0;
+    @Override
+    public String toString() {
+        return "Power (" + leftParameter.toString() + " and " + rightParameter.toString() + ")";
     }
 }

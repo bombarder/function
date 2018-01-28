@@ -4,11 +4,11 @@ import com.makarov.service.Function;
 
 public class Multiplication extends Function {
 
-    public double calculate(double inputFirstValue, double inputSecondValue) {
-        return inputFirstValue * inputSecondValue;
+    public double calculate(double x) {
+        return leftParameter.calculate(x) * rightParameter.calculate(x);
     }
-
-    public double calculate(double inputValue) {
-        return 0;
+    @Override
+    public String toString() {
+        return "Multiplication (" + leftParameter.toString() + " * " + rightParameter.toString() + ")";
     }
 }

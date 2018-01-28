@@ -1,6 +1,7 @@
 package com.makarov;
 
 import com.makarov.binary.*;
+import com.makarov.service.Argument;
 import com.makarov.service.Function;
 import com.makarov.unary.*;
 
@@ -12,46 +13,61 @@ public class Main {
 
 //         Binary operation
         Function addition = new Addition();
-        Function subtraction = new Subtraction();
-        Function multiplication = new Multiplication();
+        addition.leftParameter = new Argument();
+        addition.rightParameter = new Argument();
+
         Function division = new Division();
+        division.leftParameter = new Argument();
+        division.rightParameter = new Argument();
+
+        Function subtraction = new Subtraction();
+        subtraction.leftParameter = new Argument();
+        subtraction.rightParameter = new Argument();
+
+        Function multiplication = new Multiplication();
+        multiplication.leftParameter = new Argument();
+        multiplication.rightParameter = new Argument();
+
+        Function power = new Power();
+        power.leftParameter = new Argument();
+        power.rightParameter = new Argument();
+
+        print(addition);
+        print(division);
+        print(subtraction);
+        print(multiplication);
+        print(power);
 
 //        Unary operation
         Function polynomial = new Polynomial();
-        Function constant = new Constant();
         Function sinus = new Sinus();
         Function cosines = new Cosines();
         Function exponent = new Exponent();
-        Function power = new Power();
         Function logarithm = new Logarithm();
         Function tangent = new Tangent();
         Function cotangent = new Cotangent();
         Function squareRoot = new SquareRoot();
 
-//          Printout in console
-        print(addition);
-        print(subtraction);
-        print(multiplication);
-        print(division);
-        print(polynomial);
-        print(constant);
+        polynomial.leftParameter = new Argument();
+        sinus.leftParameter = new Argument();
+        cosines.leftParameter = new Argument();
+        exponent.leftParameter = new Argument();
+        logarithm.leftParameter = new Argument();
+        tangent.leftParameter = new Argument();
+        cotangent.leftParameter = new Argument();
+        squareRoot.leftParameter = new Argument();
+
         print(sinus);
         print(cosines);
         print(exponent);
-        print(power);
         print(logarithm);
         print(tangent);
         print(cotangent);
         print(squareRoot);
 
     }
-    private static double unaryFunctionResolver(Function input, double inputConstant){
-        return input.calculate(inputConstant);
-    }
-    private static double binaryFunctionResolver(Function input, double inputFirstArg, double inputSecondArg){
-        return input.calculate(inputFirstArg, inputSecondArg);
-    }
-    private static void print(Function function){
+
+    private static void print(Function function) {
         System.out.println(function.toString());
     }
 }
