@@ -7,8 +7,9 @@ public class Exponent extends Function {
     public double calculate(double x) {
         return Math.exp(x);
     }
-    @Override
-    public String toString() {
-        return "Exponent (" + leftParameter.toString() + ")";
-    }
+
+//    @Override
+//    public String toString() {
+//        return "Exponent (" + leftParameter.toString() + ")";
+//    }
 }

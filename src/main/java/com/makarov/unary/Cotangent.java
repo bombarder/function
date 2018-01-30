@@ -7,8 +7,9 @@ public class Cotangent extends Function {
     public double calculate(double x) {
         return 1/Math.tan(x);
     }
-    @Override
-    public String toString() {
-        return "Cotangent (" + leftParameter.toString() + ")";
-    }
+
+//    @Override
+//    public String toString() {
+//        return "Cotangent (" + leftParameter.toString() + ")";
+//    }
 }

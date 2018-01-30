@@ -14,8 +14,8 @@ public class Polynomial extends Function {
         return leftPart - rightPart;
     }
 
-    @Override
-    public String toString() {
-        return "Polynomial (" + leftParameter.toString() + ")";
-    }
+//    @Override
+//    public String toString() {
+//        return "Polynomial (" + leftParameter.toString() + ")";
+//    }
 }

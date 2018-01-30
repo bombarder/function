@@ -7,8 +7,9 @@ public class Tangent extends Function {
     public double calculate(double x) {
         return Math.tan(x);
     }
-    @Override
-    public String toString() {
-        return "Tangent (" + leftParameter.toString() + ")";
-    }
+
+//    @Override
+//    public String toString() {
+//        return "Tangent (" + leftParameter.toString() + ")";
+//    }
 }

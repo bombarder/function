@@ -4,5 +4,21 @@ import com.makarov.service.Function;
 
 public class Constant extends Function {
 
-    private double value = 90;
+    private double value;
+
+    public Constant(double value) {
+        this.value = value;
+    }
+
+    public double getValue() {
+        return value;
+    }
+
+    public void setValue(double value) {
+        this.value = value;
+    }
+    //    @Override
+//    public String toString() {
+//        return value + "";
+//    }
 }

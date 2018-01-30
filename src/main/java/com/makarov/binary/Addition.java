@@ -8,8 +8,8 @@ public class Addition extends Function {
         return leftParameter.calculate(x) + rightParameter.calculate(x);
     }
 
-    @Override
-    public String toString() {
-        return "Addition (" + leftParameter.toString() + " + " + rightParameter.toString() + ")";
-    }
+//    @Override
+//    public String toString() {
+//        return "Addition (" + leftParameter.toString() + " + " + rightParameter.toString() + ")";
+//    }
 }

@@ -5,16 +5,30 @@ import com.makarov.service.Argument;
 import com.makarov.service.Function;
 import com.makarov.unary.*;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
     public static void main(String[] args) {
 
 //         Binary operation
         Function addition = new Addition();
-        addition.leftParameter = new Argument();
-        addition.rightParameter = new Argument();
+        addition.leftParameter = new Sinus();
+        addition.rightParameter = new Cosines();
+        addition.leftParameter.leftParameter = new Exponent();
+        addition.leftParameter.leftParameter.leftParameter = new Argument();
+        addition.rightParameter.leftParameter = new Argument();
+        double result = addition.calculate(90);
+
+
+//        double leftParam = addition.leftParameter.calculate(90);
+//        System.out.println(leftParam);
+//
+//        double rightParam = addition.rightParameter.calculate(90);
+//        System.out.println(rightParam);
+//
+//        double result = addition.calculate(90);
+        System.out.println(result);
+
+
+
 
         Function division = new Division();
         division.leftParameter = new Argument();
@@ -32,11 +46,11 @@ public class Main {
         power.leftParameter = new Argument();
         power.rightParameter = new Argument();
 
-        print(addition);
-        print(division);
-        print(subtraction);
-        print(multiplication);
-        print(power);
+//        print(addition);
+//        print(division);
+//        print(subtraction);
+//        print(multiplication);
+//        print(power);
 
 //        Unary operation
         Function polynomial = new Polynomial();
@@ -57,14 +71,13 @@ public class Main {
         cotangent.leftParameter = new Argument();
         squareRoot.leftParameter = new Argument();
 
-        print(sinus);
-        print(cosines);
-        print(exponent);
-        print(logarithm);
-        print(tangent);
-        print(cotangent);
-        print(squareRoot);
-
+//        print(sinus);
+//        print(cosines);
+//        print(exponent);
+//        print(logarithm);
+//        print(tangent);
+//        print(cotangent);
+//        print(squareRoot);
     }
 
     private static void print(Function function) {
