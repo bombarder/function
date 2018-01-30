@@ -7,9 +7,4 @@ public class Cosines extends Function {
     public double calculate(double x) {
         return Math.cos(leftParameter.calculate(x));
     }
-
-//    @Override
-//    public String toString() {
-//        return "Cosines (" + leftParameter.toString() + ")";
-//    }
 }

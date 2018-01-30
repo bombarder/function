@@ -5,11 +5,6 @@ import com.makarov.service.Function;
 public class Tangent extends Function {
 
     public double calculate(double x) {
-        return Math.tan(x);
+        return Math.tan(leftParameter.calculate(x));
     }
-
-//    @Override
-//    public String toString() {
-//        return "Tangent (" + leftParameter.toString() + ")";
-//    }
 }

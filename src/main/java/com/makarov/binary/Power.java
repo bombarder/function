@@ -5,11 +5,6 @@ import com.makarov.service.Function;
 public class Power extends Function {
 
     public double calculate(double x) {
-        return Math.pow(x, x);
+        return Math.pow(leftParameter.calculate(x), rightParameter.calculate(x));
     }
-
-//    @Override
-//    public String toString() {
-//        return "Power (" + leftParameter.toString() + " and " + rightParameter.toString() + ")";
-//    }
 }
