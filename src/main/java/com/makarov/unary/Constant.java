@@ -18,4 +18,12 @@ public class Constant extends Function {
         this.value = value;
     }
 
+    public Function diff() {
+        return new Constant(0);
+    }
+
+   @Override
+    public String toString() {
+        return value + "";
+    }
 }

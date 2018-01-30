@@ -1,6 +1,6 @@
 package com.makarov.service;
 
-public class Function {
+public abstract class Function {
 
     public Function leftParameter;
     public Function rightParameter;
@@ -9,8 +9,5 @@ public class Function {
         return 0;
     }
 
-    @Override
-    public String toString() {
-        return getClass().getSimpleName() + " " + leftParameter.toString();
-    }
+    public abstract Function diff();
 }

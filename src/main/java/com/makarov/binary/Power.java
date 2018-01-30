@@ -7,4 +7,8 @@ public class Power extends Function {
     public double calculate(double x) {
         return Math.pow(leftParameter.calculate(x), rightParameter.calculate(x));
     }
+
+    public Function diff() {
+        return null;
+    }
 }

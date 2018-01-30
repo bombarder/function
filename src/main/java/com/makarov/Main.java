@@ -15,6 +15,14 @@ public class Main {
         addition.leftParameter.leftParameter.leftParameter = new Argument();
         addition.rightParameter.leftParameter = new Argument();
         double result = addition.calculate(90);
-        System.out.println(result);
+
+        Function f4 = new Exponent();
+        f4.leftParameter = new Exponent();
+        f4.leftParameter.leftParameter = new Argument();
+
+        Function f5 = f4.diff();
+        System.out.println(f4);
+        System.out.println(f5);
+
     }
 }

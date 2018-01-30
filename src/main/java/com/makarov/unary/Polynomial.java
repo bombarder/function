@@ -13,4 +13,12 @@ public class Polynomial extends Function {
         double rightPart = new Division().calculate(leftParameter.calculate(x));
         return leftPart - rightPart;
     }
+
+    public Function diff() {
+        return null;
+    }
+    @Override
+    public String toString() {
+        return "(" + leftParameter.toString() + ")*(" + rightParameter.toString() + ")";
+    }
 }
